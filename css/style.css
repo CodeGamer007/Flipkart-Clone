@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #2874f0;
+    --item-bg-color: white;
+}
+
+body {
+    background-color: rgb(251, 236, 236);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+}
+
+.sticky-top {
+    display: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    ;
+}
+
+.navbar ul li {
+    padding: 23px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+#home:hover {
+    color: rgb(222, 222, 94);
+}
+
+#About:hover {
+    color: rgb(102, 240, 111);
+}
+
+#contact:hover {
+    color: #f467a1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.logo img {
+    width: 104px;
+}
+
+.searcharea {
+    display: flex;
+    align-items: center;
+}
+
+.searchbtn {
+    padding: 0 10px 0;
+}
+
+.searcharea input {
+    height: 37px;
+    width: 350px;
+    font-size: 13px;
+    padding: 0 10px 0;
+    font-family: 'Raleway', sans-serif;
+    border: 2px inset;
+    border-radius: 10px;
+}
+
+datalist a option {
+    background-color: var(--item-bg-color);
+    color: black;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    margin: 0 0 0 auto;
+    align-items: center;
+}
+
+.container {
+    min-height: calc(100vh - 15vh - 8vh);
+    /* Here the minimum height of the container is set through calc function so that whatever we do the height of the whole page the container section will be in 100vh, no matter how much the screen gets scrolled down. It will help us to make the page responsive.*/
+}
+
+.carousel-place {
+    height: 55vh;
+    margin: 20px 10px;
+}
+
+.carousel-place img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 20px 50px 1px black;
+}
+
+.show-items {
+    margin: 50px 10px;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    background-color: var(--item-bg-color);
+    padding: 20px 0;
+    box-shadow: 5px 5px 10px rgb(68, 66, 66);
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.item-1 h2,
+.item-2 h2,
+.item-3 h2,
+.item-4 h2 {
+    margin: 0 0 15px 15px;
+}
+
+.item-1-items,
+.item-2-items,
+.item-3-items,
+.item-4-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0 0 0;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-top-color: darkgrey;
+    padding: 15px 0 0 0;
+}
+
+.items-1 p,
+.items-2 p,
+.items-3 p,
+.items-4 p {
+    text-align: center;
+    line-height: 30px;
+}
+
+.items-1:hover,
+.items-2:hover,
+.items-3:hover,
+.items-4:hover {
+    cursor: pointer;
+}
+
+.items-1:hover img,
+.items-2:hover img,
+.items-3:hover img,
+.items-4:hover img {
+    transform: scale(1.03);
+}
+
+footer {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.to-top {
+    width: 60px;
+    position: fixed;
+    z-index: 5;
+    top: 95vh;
+    left: 95vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+
+.to-top>p {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+}

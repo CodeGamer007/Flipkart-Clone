@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+<body>
+
+    <div id="blur">
+        <header>
+            <nav class="navbar">
+                <div class="left">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" />
+                    </div>
+                    <ul>
+                        <li><a id="home" href="index.html">Home</a></li>
+                        <li><a id="About" href="about.html">About</a></li>
+                        <li class="active"><a id="contact" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <form>
+                        <div class="searcharea">
+                            <div class="searchbtn">
+                                <button type="button" onclick="login();">Login</button><button
+                                    type="button" onclick="signup();">Signup</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="top">
+                    <div class="heading">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            jyotirmaysikdar0@gmail.com<br>
+                            2/4 Rajendra Prasad,<br>
+                            Avenue C-Zone,<br>
+                            Durgapur - 05,<br>
+                            West Bengal, Paschim Bardhaman,<br>
+                            India, PIN:- 713205.<br>
+                            Phone:- +91 9434661470
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="form-heading">
+                        <h2>Contact Form</h2>
+                    </div>
+                    <div class="form">
+                        <form>
+                            <input type="text" placeholder="First Name*" id="name1" required>
+                            <input type="text" placeholder="Last Name*" id="name2" required><br>
+                            <input type="email" placeholder="Email address*" id="emaid" required><br>
+                            <input type="text" placeholder="Mobile Number*" id="numvber" required><br>
+                            <input type="text" placeholder="Subject*" id="topic" required><br>
+                            <textarea id="problem" cols="61" rows="15" placeholder="State the problem*"
+                                required></textarea><br>
+                            <input type="submit" value="Contact Here!" id="to-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <form action="#">
+        <div id="form">
+            <div class="icon">
+                <i class="fa fa-check"></i>
+            </div>
+            <div class="heading">
+                <h2>login</h2>
+                <p>Please enter your username and password</p>
+            </div>
+
+            <div class="inputs">
+                <input type="text" placeholder="Username"><br>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="login-btn">
+                <input type="submit" value="Login" onclick="login();">
+            </div>
+
+            <div class="forget-password">
+                <a href="">
+                    Forget password?
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <form action="#" id="signup-form">
+
+        <div class="heading">
+            <h2>Sign Up</h2>
+            <p>Please fill in this form to create a new account!</p>
+        </div>
+
+        <hr>
+
+        <div class="form-inputs">
+            <input type="text" placeholder="First Name*" id="name1" required>
+            <input type="text" placeholder="Last Name*" id="name2" required><br>
+            <input type="text" placeholder="Mobile Number*" required><br>
+            <input type="text" placeholder="Email*" required><br>
+            <input type="password" placeholder="Password*" required><br>
+            <input type="password" placeholder="Confirm Password*" required>
+        </div>
+
+        <div class="terms">
+            <input type="checkbox">
+            <p>I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="btn">
+            <input type="submit" value="Sign Up" id="blur-btn" onclick="signup();">
+        </div>
+
+        <div class="already-login">
+            <p>Already have an account?Click here to <a href="#">Login</a>.</p>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>
